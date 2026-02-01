@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Page Analyzer AI",
   "version": "1.0.0",
-  "description": "Analyze web pages for typos, grammar, and content issues using AI (Groq/Gemini). Batch analyze multiple pages with your own API keys.",
+  "description": "Analyze web pages for typos, grammar, and content issues using AI (Groq/Gemini). Use your own API keys.",
   "permissions": ["activeTab", "storage", "scripting", "tabs"],
   "host_permissions": ["<all_urls>"],
   "minimum_chrome_version": "110",
