@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply bg-purple-600 text-white hover:bg-purple-700 disabled:hover:bg-purple-600;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300 disabled:hover:bg-gray-200;
+}
+
+.btn-danger {
+  @apply bg-red-600 text-white hover:bg-red-700 disabled:hover:bg-red-600;
+}
+
+.input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent;
+}
+
+.select {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-4;
+}
+
+.checkbox {
+  @apply w-4 h-4 text-purple-600 bg-gray-100 border-gray-300 rounded focus:ring-purple-500 focus:ring-2;
+}
+
+.analysis-content {
+  @apply text-sm leading-relaxed text-gray-700;
+}
+
+.analysis-content h2 {
+  @apply font-bold text-gray-900 text-lg mt-4 mb-2;
+}
+
+.analysis-content h3 {
+  @apply font-semibold text-gray-800 text-base mt-4 mb-2;
+}
+
+.analysis-content h4 {
+  @apply font-semibold text-gray-800 mt-3 mb-1;
+}
+
+.analysis-content ul {
+  @apply my-2 space-y-1;
+}
+
+.analysis-content li {
+  @apply ml-4;
+}
+
+.analysis-content pre {
+  @apply bg-gray-800 text-gray-100 p-3 rounded my-3 overflow-x-auto text-xs;
+}
+
+.analysis-content code {
+  @apply bg-gray-200 text-purple-700 px-1 rounded text-xs;
+}
+
+.analysis-content pre code {
+  @apply bg-transparent text-gray-100 p-0;
+}
+
+.analysis-content p {
+  @apply my-2;
+}
+
+.analysis-content strong {
+  @apply font-semibold text-gray-800;
+}
+
+.analysis-content em {
+  @apply italic;
+}
+
+.analysis-content .table-wrapper {
+  @apply my-3 -mx-4 px-4 overflow-x-auto;
+  max-width: calc(100% + 2rem);
+}
+
+.analysis-content table {
+  @apply min-w-full border-collapse text-sm;
+}
+
+.analysis-content th {
+  @apply border border-gray-300 px-3 py-2 bg-gray-100 font-semibold text-left;
+}
+
+.analysis-content td {
+  @apply border border-gray-300 px-3 py-2;
+}
+
+.analysis-content tr:nth-child(even) {
+  @apply bg-gray-50;
+}

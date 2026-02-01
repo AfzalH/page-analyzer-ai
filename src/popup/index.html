@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Analyzer AI</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+  </head>
+  <body class="w-[400px] min-h-[300px] p-4">
+    <div id="app">
+      <div class="flex items-center justify-between mb-4">
+        <h1 class="text-lg font-bold text-purple-700">Page Analyzer AI</h1>
+        <div class="flex gap-2">
+          <button id="optionsBtn" class="text-sm text-gray-500 hover:text-purple-600">
+            Settings
+          </button>
+          <button id="resultsBtn" class="text-sm text-gray-500 hover:text-purple-600">
+            Results
+          </button>
+        </div>
+      </div>
+
+      <div id="currentPage" class="card mb-4">
+        <div class="text-sm text-gray-500 mb-1">Current Page</div>
+        <div id="currentUrl" class="text-sm font-medium truncate"></div>
+        <div id="currentTitle" class="text-xs text-gray-400 truncate"></div>
+      </div>
+
+      <div id="errorMessage" class="hidden bg-red-100 text-red-700 p-3 rounded-lg mb-4 text-sm"></div>
+
+      <div id="progressSection" class="hidden card mb-4">
+        <div class="flex justify-between items-center mb-2">
+          <span class="text-sm font-medium">Analysis Progress</span>
+          <span id="progressCount" class="text-sm text-gray-500">0/0</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+          <div id="progressBar" class="bg-purple-600 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+        <div id="progressStatus" class="text-xs text-gray-500 truncate"></div>
+        <button id="stopBtn" class="btn btn-secondary mt-2 w-full text-sm">Stop</button>
+      </div>
+
+      <div id="linksSection" class="card mb-4">
+        <div class="flex justify-between items-center mb-3">
+          <span class="text-sm font-medium">Internal Links</span>
+          <div class="flex gap-2">
+            <button id="selectAllBtn" class="text-xs text-purple-600 hover:underline">Select All</button>
+            <button id="deselectAllBtn" class="text-xs text-purple-600 hover:underline">Deselect All</button>
+          </div>
+        </div>
+        <div id="linksList" class="max-h-[200px] overflow-y-auto space-y-1">
+          <div class="text-sm text-gray-400">Loading links...</div>
+        </div>
+        <div id="linksCount" class="text-xs text-gray-400 mt-2"></div>
+      </div>
+
+      <div class="flex gap-2">
+        <button id="analyzeCurrentBtn" class="btn btn-secondary flex-1">
+          Analyze Current
+        </button>
+        <button id="analyzeSelectedBtn" class="btn btn-primary flex-1">
+          Analyze Selected
+        </button>
+      </div>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

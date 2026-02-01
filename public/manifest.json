@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Page Analyzer AI",
+  "version": "1.0.0",
+  "description": "Analyze web pages for typos, grammar, and content issues using AI (Groq/Gemini). Batch analyze multiple pages with your own API keys.",
+  "permissions": ["activeTab", "storage", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "minimum_chrome_version": "110",
+  "action": {
+    "default_popup": "src/popup/index.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"]
+    }
+  ],
+  "options_page": "src/options/index.html"
+}
