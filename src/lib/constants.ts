@@ -19,10 +19,10 @@ HTML Content:
 {content}
 
 Rules:
-- List exactly 5 issues maximum (or fewer if the content is good)
+- List exactly 5 issues maximum (or fewer if the content is good) preferably in a markdown table format.
 - Focus on: typos, spelling errors, grammar issues in the visible text
 - Ignore HTML tags/attributes - only analyze the human-readable text content
-- Be concise - one sentence per issue
+- Be concise - one/two sentences per issue
 - Include the original text and suggested fix
 - Skip minor stylistic preferences
 

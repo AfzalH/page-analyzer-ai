@@ -92,7 +92,6 @@ async function analyzeCurrentPage(tabId: number): Promise<AnalysisResult | null>
       url: pageContent.url,
       title: pageContent.title,
       analyzedAt: Date.now(),
-      contentPreview: pageContent.content.substring(0, 200) + '...',
       analysis,
       provider,
       model,

@@ -11,7 +11,6 @@ export interface AnalysisResult {
   url: string;
   title: string;
   analyzedAt: number;
-  contentPreview: string;
   analysis: string;
   provider: string;
   model: string;

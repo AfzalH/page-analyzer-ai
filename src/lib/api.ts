@@ -28,7 +28,7 @@ export async function analyzeWithGroq(
         },
       ],
       temperature: 0.3,
-      max_tokens: 4096,
+      max_tokens: 12288,
     }),
   });
 
@@ -67,7 +67,7 @@ export async function analyzeWithGemini(
       ],
       generationConfig: {
         temperature: 0.3,
-        maxOutputTokens: 4096,
+        maxOutputTokens: 12288,
       },
     }),
   });

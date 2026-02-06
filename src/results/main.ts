@@ -152,10 +152,6 @@ function renderResult(result: AnalysisResult, index: number): string {
             ${escapeHtml(result.url)}
           </a>
         </div>
-        <div class="text-sm text-gray-600 mb-2">Content Preview:</div>
-        <div class="text-sm text-gray-500 bg-gray-50 p-3 rounded mb-4">
-          ${escapeHtml(result.contentPreview)}
-        </div>
         <div class="text-sm text-gray-600 mb-2">Analysis:</div>
         <div class="bg-purple-50 p-4 rounded analysis-content">
           ${renderAnalysis(result.analysis)}

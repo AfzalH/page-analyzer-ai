@@ -1,6 +1,6 @@
 {
   "name": "page-analyzer-ai",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chrome extension that analyzes web pages for typos, grammar, and improvements using LLM APIs",
   "type": "module",
   "scripts": {
@@ -11,12 +11,12 @@
     "package": "npm run icons && npm run zip"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.268",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
+    "@types/chrome": "^0.1.36",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
     "sharp": "^0.34.5",
-    "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.11"
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
   }
 }
